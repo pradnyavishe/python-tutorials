@@ -1,0 +1,40 @@
+# File Handling
+# mode: r - read, w - write, a - append
+
+# open file
+file = open('example.txt', 'r')  #read mode
+
+# read file
+file = open('example.txt', 'r')
+content = file.read()  # read entire data
+print(content)
+file.close()           # best practice
+
+file = open('example.txt', 'r')
+content = file.readline()  # read first line
+print(content)
+file.close()
+
+file = open('example.txt', 'r')
+content = file.readlines()   # list entire data
+print(content)
+file.close
+
+# write to a file
+file = open('example2.txt', 'w') # write mode
+file.write("Namaste!")
+file.close
+
+# file = open('example2.txt', 'w') # write mode - overwrite
+# file.write("Namaste! How are you?")
+# file.close
+
+# file = open('example2.txt', 'a') # append mode - incremental write
+# file.write("\n Again Fine.")
+# file.close
+
+# close a file
+# using with statement
+with open('example2.txt', 'r') as file:
+    content = file.readlines()
+    print(content)
