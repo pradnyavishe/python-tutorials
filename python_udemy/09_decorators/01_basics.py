@@ -12,4 +12,4 @@ def greet():
     print("Hello from decorators class from chaicode")
 
 greet()
-print(greet.__name__)
+print(greet.__name__)   
